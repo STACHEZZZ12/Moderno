@@ -1,0 +1,123 @@
+
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FashionStyle - Sklep z odzieżą</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Inter', sans-serif;
+    }
+    body {
+      background-color: #f8f9fa;
+      padding: 2rem;
+    }
+    header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 2rem;
+    }
+    header h1 {
+      font-size: 2rem;
+      font-weight: 600;
+    }
+    header button {
+      background-color: #000;
+      color: #fff;
+      padding: 0.6rem 1.2rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 1.5rem;
+    }
+    .card {
+      background-color: #fff;
+      border-radius: 16px;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+      overflow: hidden;
+      transition: transform 0.2s;
+    }
+    .card:hover {
+      transform: translateY(-4px);
+    }
+    .card img {
+      width: 100%;
+      height: 300px;
+      object-fit: cover;
+    }
+    .card-content {
+      padding: 1rem;
+    }
+    .card-content h2 {
+      font-size: 1.2rem;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .card-content p {
+      font-weight: bold;
+      margin-bottom: 1rem;
+    }
+    .card-content button {
+      width: 100%;
+      background-color: #000;
+      color: #fff;
+      padding: 0.6rem;
+      border: none;
+      border-radius: 8px;
+      cursor: pointer;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>👕 FashionStyle</h1>
+    <button>🛒 Koszyk</button>
+  </header>
+  <main>
+    <section class="grid">
+      <div class="card">
+        <img src="https://via.placeholder.com/300x400?text=T-shirt" alt="T-shirt Basic">
+        <div class="card-content">
+          <h2>T-shirt Basic</h2>
+          <p>49.99 zł</p>
+          <button>Dodaj do koszyka</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x400?text=Jeansy" alt="Jeansy Slim Fit">
+        <div class="card-content">
+          <h2>Jeansy Slim Fit</h2>
+          <p>129.99 zł</p>
+          <button>Dodaj do koszyka</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x400?text=Bluza" alt="Bluza z kapturem">
+        <div class="card-content">
+          <h2>Bluza z kapturem</h2>
+          <p>89.99 zł</p>
+          <button>Dodaj do koszyka</button>
+        </div>
+      </div>
+      <div class="card">
+        <img src="https://via.placeholder.com/300x400?text=Kurtka" alt="Kurtka Przejściowa">
+        <div class="card-content">
+          <h2>Kurtka Przejściowa</h2>
+          <p>199.99 zł</p>
+          <button>Dodaj do koszyka</button>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
